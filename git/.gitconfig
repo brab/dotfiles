@@ -1,0 +1,9 @@
+[color]
+	ui = true
+[user]
+	name = Ben Rabinovitch
+	email = github@ben.rabinovitch.ca
+[alias]
+	tree = log --graph --oneline --decorate
+	st = status
+	di = diff
