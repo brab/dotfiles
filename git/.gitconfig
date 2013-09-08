@@ -7,3 +7,5 @@
 	tree = log --graph --oneline --decorate
 	st = status
 	di = diff
+[push]
+	default = upstream
