@@ -1,5 +1,6 @@
 set nocompatible  "required for a bunch of cool vim stuff
                   "should be at the top of the file
+filetype off "required for Vundle; reset properly at the bottom
 
 set autoread "auto reload a file when edited externally
 set backspace=indent,eol,start "make backspace work as expected

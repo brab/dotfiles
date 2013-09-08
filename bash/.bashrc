@@ -6,5 +6,5 @@ alias ls='l -hal'
 # use VI-style keybindings on the command line
 set -o vi
 
-# uncomment if git is stowed
+# comment if git isn't stowed
 source ~/.git-completion.bash
