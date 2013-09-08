@@ -7,4 +7,4 @@ alias ls='l -hal'
 set -o vi
 
 # uncomment if git is stowed
-#source ~/.git-completion.bash
+source ~/.git-completion.bash
