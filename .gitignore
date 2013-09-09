@@ -1,3 +1,6 @@
 *.swo
 *.swp
 .DS_Store
+
+vim/.vim/bundle/*
+!vim/.vim/bundle/vundle/
