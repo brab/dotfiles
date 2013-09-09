@@ -1,5 +1,6 @@
 set nocompatible  "required for a bunch of cool vim stuff
                   "should be at the top of the file
+filetype on "turn on before off so vim doesn't error
 filetype off "required for Vundle; reset properly at the bottom
 
 set autoread "auto reload a file when edited externally
@@ -42,6 +43,13 @@ map <F2> :NERDTreeToggle <CR>
 map <F3> :nohl <CR>
 map <F4> :set spell!<CR>
 map <C-g> :FufFileWithCurrentBufferDir <CR>
+nmap <leader>t :tabnew <CR>
+
+"command-{#} to change tabs
+nmap <D-1> 1gt
+nmap <D-2> 2gt
+nmap <D-3> 3gt
+nmap <D-4> 4gt
 
 "use arrow keys to change buffers
 map <up> <C-W>k
@@ -57,6 +65,7 @@ map - <C-W><
 
 "autoindent line
 nnoremap <leader>= ==
+nnoremap <leader>a ==
 
 "search and replace highlighted text
 vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
