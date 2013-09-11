@@ -70,6 +70,8 @@ nnoremap <leader>a ==
 "search and replace highlighted text
 vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 
+"auto open NERDTree if no file specified
+autocmd vimenter * if !argc() | NERDTree | endif
 
 "return to last edit position when opening a file
 au BufReadPost *
