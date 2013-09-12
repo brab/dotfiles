@@ -86,8 +86,12 @@ hi Col80	guibg=#610b0b
 au BufWinEnter *.py let w:m1=matchadd('Col79', '\%<81v.\%>80v', -1)
 au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
 
-"have Syntastic run in passive mode by default
-let g:syntastic_mode_map = {'mode': 'passive', 'active_filetypes': [], 'passive_filetypes': [] }
+"Syntastic options
+let g:syntastic_mode_map = { 'mode': 'active',
+			   \ 'active_filetypes': ['javascript'],
+			   \ 'passive_filetypes': ['html', 'python'] }
+let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_python_checkers=['pylint']
 
 " Functions
 function! CmdLine(str)
