@@ -4,3 +4,4 @@
 
 vim/.vim/bundle/*
 !vim/.vim/bundle/vundle/
+vim/.vim/view/

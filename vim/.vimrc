@@ -37,6 +37,10 @@ au BufRead,BufNewFile *.haml,*.sass,*.scss set softtabstop=2
 au BufRead,BufNewFile *.php,*.ejs set filetype=html "treat php + ejs as html
 au FileType text setlocal textwidth=78 "text file line length of 78 chars
 
+" save + load views / code folding
+au BufWinLeave *.js mkview
+au BufWinEnter *.js silent loadview
+
 " Key mappings
 let mapleader=","
 map <F2> :NERDTreeToggle <CR>
@@ -66,6 +70,7 @@ map - <C-W><
 "autoindent line
 nnoremap <leader>= ==
 nnoremap <leader>a ==
+vnoremap <leader>a ==
 
 "search and replace highlighted text
 vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
