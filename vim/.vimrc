@@ -73,6 +73,7 @@ nnoremap <leader>a ==
 vnoremap <leader>a ==
 
 "search and replace highlighted text
+vnoremap <silent> <leader>s :call VisualSelection('f')<CR>
 vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 
 "auto open NERDTree if no file specified
