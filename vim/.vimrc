@@ -47,7 +47,7 @@ map <F2> :NERDTreeToggle <CR>
 map <F3> :nohl <CR>
 map <F4> :set spell!<CR>
 map <C-g> :FufFileWithCurrentBufferDir <CR>
-nmap <leader>t :tabnew <CR>
+nmap <leader>t :tabnew<CR>:NERDTreeToggle<CR>
 
 "command-{#} to change tabs
 nmap <D-1> 1gt
