@@ -7,5 +7,10 @@
 	tree = log --graph --oneline --decorate
 	st = status
 	di = diff
+	dt = difftool
 [push]
 	default = upstream
+[diff]
+	tool = mvimdiff
+[difftool "mvimdiff"]
+	cmd = mvim -f -R -d \"$LOCAL\" \"$REMOTE\"
