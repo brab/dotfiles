@@ -154,6 +154,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tsaleh/vim-matchit'
+Bundle 'hdima/python-syntax'
 
 "vim-scripts
 Bundle 'L9'
