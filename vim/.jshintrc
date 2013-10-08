@@ -1,0 +1,14 @@
+{
+  "bitwise": true,
+  "camelcase": true,
+  "curly": true,
+  "eqeqeq": true,
+  "forin": true,
+  "indent": 2,
+  "jquery": true,
+  "latedef": true,
+  "maxparams": 3,
+  "plusplus": true,
+  "undef": true,
+  "unused": "vars"
+}
