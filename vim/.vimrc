@@ -48,6 +48,8 @@ map <F3> :nohl <CR>
 map <F4> :set spell!<CR>
 map <C-g> :FufFileWithCurrentBufferDir <CR>
 nmap <leader>t :tabnew<CR>:NERDTreeToggle<CR>
+nmap [e :lprevious<CR>
+nmap ]e :lnext<CR>
 
 "in diff mode only
 if &diff
@@ -102,10 +104,11 @@ let NERDTreeIgnore = ['\.pyc$']
 
 "Syntastic options
 let g:syntastic_mode_map = { 'mode': 'active',
-			   \ 'active_filetypes': ['javascript'],
-			   \ 'passive_filetypes': ['html', 'python'] }
+			   \ 'active_filetypes': ['javascript', 'python'],
+			   \ 'passive_filetypes': ['html'] }
 let g:syntastic_javascript_checkers=['jshint']
 let g:syntastic_python_checkers=['pylint']
+"let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
 
 " Functions
 function! CmdLine(str)
@@ -152,13 +155,14 @@ Bundle 'gmarik/vundle'
 
 "github
 Bundle 'godlygeek/tabular'
+Bundle 'hdima/python-syntax'
 Bundle 'jelera/vim-javascript-syntax'
+Bundle 'rodjek/vim-puppet'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tsaleh/vim-matchit'
-Bundle 'hdima/python-syntax'
 
 "vim-scripts
 Bundle 'L9'

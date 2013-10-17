@@ -1,0 +1,6 @@
+[MESSAGES CONTROL]
+# F0401 - unable to import
+#disable-msg=F0401
+
+[TYPECHECK]
+#generated-members=objects,_meta,id,DoesNotExist,MultipleObjectsReturned,as_view
