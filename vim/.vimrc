@@ -37,10 +37,6 @@ au BufRead,BufNewFile *.haml,*.sass,*.scss set softtabstop=2
 au BufRead,BufNewFile *.php,*.ejs set filetype=html "treat php + ejs as html
 au FileType text setlocal textwidth=78 "text file line length of 78 chars
 
-" save + load views / code folding
-au BufWinLeave *.js mkview
-au BufWinEnter *.js silent loadview
-
 " Key mappings
 let mapleader=","
 map <F2> :NERDTreeToggle <CR>
@@ -51,9 +47,13 @@ nmap <leader>t :tabnew<CR>:NERDTreeToggle<CR>
 nmap [e :lprevious<CR>
 nmap ]e :lnext<CR>
 
-"in diff mode only
+" diff mode specific config
 if &diff
-nmap :Q :qa
+    nmap :Q :qa
+else
+    " save + load views / code folding
+    au BufWinLeave *.js mkview
+    au BufWinEnter *.js silent loadview
 endif
 
 "command-{#} to change tabs
