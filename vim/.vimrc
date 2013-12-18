@@ -38,7 +38,7 @@ au BufRead,BufNewFile *.php,*.ejs set filetype=html "treat php + ejs as html
 au FileType text setlocal textwidth=78 "text file line length of 78 chars
 
 " Key mappings
-let mapleader=","
+let mapleader=" "
 map <F2> :NERDTreeToggle <CR>
 map <F3> :nohl <CR>
 map <F4> :set spell!<CR>
