@@ -162,6 +162,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-surround'
 Bundle 'tsaleh/vim-matchit'
 
 "vim-scripts
