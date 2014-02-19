@@ -50,10 +50,6 @@ nmap ]e :lnext<CR>
 " diff mode specific config
 if &diff
     nmap :Q :qa
-else
-    " save + load views / code folding
-    au BufWinLeave *.js mkview
-    au BufWinEnter *.js silent loadview
 endif
 
 "command-{#} to change tabs
@@ -171,3 +167,7 @@ Bundle 'FuzzyFinder'
 
 filetype plugin indent on "turn on filetype options: detection, plugin, indent
 syntax on "syntax highlighting
+
+" Code folding
+set foldlevelstart=1
+au FileType javascript call JavaScriptFold()
