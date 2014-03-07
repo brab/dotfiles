@@ -21,10 +21,10 @@ set vb t_vb= "disable visual bell + terminal bell
 colorscheme wombat
 
 " File tabbing
-au BufRead,BufNewFile *.py,*.pyw set expandtab
-au BufRead,BufNewFile *.py,*.pyw set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw set tabstop=4
-au BufRead,BufNewFile *.py,*.pyw set softtabstop=4
+au BufRead,BufNewFile *.py,*.pyw,*.sh set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.sh set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw,*.sh set tabstop=4
+au BufRead,BufNewFile *.py,*.pyw,*.sh set softtabstop=4
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set expandtab
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set tabstop=2
