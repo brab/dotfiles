@@ -1,0 +1,12 @@
+import:
+        move: yes
+        log: /home/brab/Music/beets_imported.log
+        quiet_fallback: skip
+        resume: ask
+directory: /home/brab/Music
+ignore: .AppleDouble ._* *~ .DS_Store beets_library.db beets_imported.log
+incremental: yes
+library: /home/brab/Music/beets_library.db
+paths:
+        default: $albumartist/$album%aunique{}/$track $title
+plugins: fetchart embedart lastgenre fromfilename chroma scrub
