@@ -159,7 +159,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-surround'
-Bundle 'tsaleh/vim-matchit'
+Bundle 'vim-scripts/matchit.zip'
 
 "vim-scripts
 Bundle 'L9'
