@@ -150,6 +150,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "github
+Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'hdima/python-syntax'
 Bundle 'jelera/vim-javascript-syntax'
