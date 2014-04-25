@@ -6,4 +6,9 @@ set guioptions-=m "remove menubar
 
 " Font stuff
 set anti "antialias fonts
-set guifont=Monospace\ 11
+" OSX formatted
+try
+    set guifont=Cousine:h12
+catch
+    set guifont=Menlo:h12
+endtry
