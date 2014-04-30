@@ -171,4 +171,4 @@ syntax on "syntax highlighting
 
 " Code folding
 set foldlevelstart=1
-au FileType javascript call JavaScriptFold()
+let javaScript_fold=1 " JavaScript
