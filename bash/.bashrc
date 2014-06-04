@@ -1,5 +1,5 @@
 # bash aliases
-alias grep='grep -HIrin --color=always'
+alias bgrep='grep -HIrin --color=always'
 alias l='ls'
 alias ls='l -hal'
 
