@@ -74,6 +74,8 @@ map - <C-W><
 nnoremap <leader>= ==
 nnoremap <leader>a ==
 vnoremap <leader>a ==
+nmap <leader>p p<leader>a
+nmap <leader>P P<leader>a
 
 "search and replace highlighted text
 vnoremap <silent> <leader>s :call VisualSelection('f')<CR>n
