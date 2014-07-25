@@ -101,6 +101,7 @@ au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
 let NERDTreeIgnore = ['\.pyc$']
 
 "Syntastic options
+let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': ['javascript', 'python'],
 			   \ 'passive_filetypes': ['html'] }
