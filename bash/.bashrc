@@ -5,7 +5,7 @@ alias ls='ls -hal'
 # use VI-style keybindings on the command line
 set -o vi
 
-if [ command -v brew >/dev/null 2>&1 ]; then
+if [ -x /usr/local/bin/brew ]; then
     # homebrew prefers this order for PATH
     export PATH=/usr/local/bin:$PATH
     export PATH=/usr/local/sbin:$PATH
