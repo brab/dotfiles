@@ -18,8 +18,6 @@ set spelllang=en_ca "set spelling language to Canadian English
 set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
 set vb t_vb= "disable visual bell + terminal bell
 
-colorscheme wombat
-
 " File tabbing
 au BufRead,BufNewFile *.py,*.pyw,*.sh set expandtab
 au BufRead,BufNewFile *.py,*.pyw,*.sh set shiftwidth=4
@@ -153,6 +151,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "github
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'hdima/python-syntax'
@@ -171,6 +170,16 @@ Bundle 'FuzzyFinder'
 
 filetype plugin indent on "turn on filetype options: detection, plugin, indent
 syntax on "syntax highlighting
+
+" color scheme
+if has('gui_running')
+	set background=light
+else
+	set background=dark
+endif
+colorscheme solarized
+call togglebg#map("<F5>")
+
 
 " Code folding
 set foldlevelstart=1
