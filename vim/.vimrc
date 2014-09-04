@@ -108,6 +108,14 @@ let g:syntastic_python_checkers=['pylint']
 "let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
 
 " Functions
+function! <SID>StripTrailingWhitespaces()
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    call cursor(l, c)
+endfunction
+autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
 function! CmdLine(str)
     exe "menu Foo.Bar :" . a:str
     emenu Foo.Bar
@@ -179,7 +187,6 @@ else
 endif
 colorscheme solarized
 call togglebg#map("<F5>")
-
 
 " Code folding
 set foldlevelstart=1
