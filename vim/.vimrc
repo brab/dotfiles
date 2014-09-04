@@ -186,7 +186,7 @@ else
 	set background=dark
 endif
 colorscheme solarized
-call togglebg#map("<F5>")
+call togglebg#map("")
 
 " Code folding
 set foldlevelstart=1
