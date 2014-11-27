@@ -193,3 +193,5 @@ call togglebg#map("")
 " Code folding
 set foldlevelstart=1
 au FileType javascript call JavaScriptFold()
+let g:is_bash=1
+let g:sh_fold_enabled=3
