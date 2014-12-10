@@ -173,6 +173,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/matchit.zip'
+Bundle 'airblade/vim-gitgutter'
 
 "vim-scripts
 Bundle 'L9'
