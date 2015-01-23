@@ -10,3 +10,6 @@ library: /home/brab/Music/beets_library.db
 paths:
         default: $albumartist/$album%aunique{}/$track $title
 plugins: fetchart embedart lastgenre fromfilename chroma scrub
+plex:
+    host: localhost
+    port: 32400
