@@ -100,6 +100,7 @@ let NERDTreeIgnore = ['\.pyc$']
 
 "Syntastic options
 let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height=5
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': ['javascript', 'python'],
@@ -160,6 +161,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 "github
+Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
@@ -173,7 +175,6 @@ Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/matchit.zip'
-Bundle 'airblade/vim-gitgutter'
 
 "vim-scripts
 Bundle 'L9'
