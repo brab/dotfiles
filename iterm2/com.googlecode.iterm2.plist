@@ -533,7 +533,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>1702 221 924 485 1440 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>2784 6 570 1051 1440 0 1920 1057 </string>
+	<string>2784 4 576 1053 1440 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1269,6 +1269,8 @@
 			<string>/Users/brab</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1335,7 +1337,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2014-11-27T17:08:08Z</date>
+	<date>2015-01-12T16:53:36Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1345,7 +1347,7 @@
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SplitPaneDimmingAmount</key>
-	<real>0.40000000596046448</real>
+	<real>0.22192007303237915</real>
 	<key>SwitchTabModifier</key>
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
