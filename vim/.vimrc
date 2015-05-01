@@ -27,10 +27,10 @@ au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set expandtab
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set tabstop=2
 au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set softtabstop=2
-au BufRead,BufNewFile *.haml,*.sass,*.scss set shiftwidth=2
-au BufRead,BufNewFile *.haml,*.sass,*.scss set expandtab
-au BufRead,BufNewFile *.haml,*.sass,*.scss set tabstop=2
-au BufRead,BufNewFile *.haml,*.sass,*.scss set softtabstop=2
+au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set shiftwidth=2
+au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set expandtab
+au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set tabstop=2
+au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set softtabstop=2
 
 au BufRead,BufNewFile *.php,*.ejs set filetype=html "treat php + ejs as html
 au FileType text setlocal textwidth=78 "text file line length of 78 chars
