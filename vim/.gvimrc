@@ -16,7 +16,7 @@ if has("gui_gtk2")
 elseif has("gui_macvim")
     "OSX
     try
-        set guifont=Cousine:h12
+        set guifont=SourceCodePro:h12
     catch
         set guifont=Menlo:h12
     endtry
