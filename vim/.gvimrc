@@ -3,6 +3,7 @@ set guioptions-=T "remove toolbar
 set guioptions-=m "remove menubar
 "turned off for OSX, causes problems
 "set guioptions-=r "remove right scrollbar
+set t_vb= "disable visual bell
 
 " Font stuff
 set anti "antialias fonts
