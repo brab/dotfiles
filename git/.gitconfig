@@ -14,3 +14,5 @@
 	tool = mvimdiff
 [difftool "mvimdiff"]
 	cmd = mvim -f -R -d \"$LOCAL\" \"$REMOTE\"
+[core]
+	excludesfile = ~/.gitignore
