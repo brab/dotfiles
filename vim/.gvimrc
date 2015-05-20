@@ -10,9 +10,9 @@ set anti "antialias fonts
 if has("gui_gtk2")
     "Ubuntu
     try
-        set guifont=SourceCodePro\ 12
+        set guifont=SourceCodePro\ 11
     catch
-        set guifont=UbuntuMono\ 12
+        set guifont=UbuntuMono\ 11
     endtry
 elseif has("gui_macvim")
     "OSX
