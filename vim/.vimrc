@@ -50,11 +50,18 @@ if &diff
     nmap :Q :qa
 endif
 
+"alt-{#} to change tabs
+nmap <M-1> 1gt
+nmap <M-2> 2gt
+nmap <M-3> 3gt
+nmap <M-4> 4gt
+nmap <M-5> 5gt
 "command-{#} to change tabs
 nmap <D-1> 1gt
 nmap <D-2> 2gt
 nmap <D-3> 3gt
 nmap <D-4> 4gt
+nmap <D-5> 5gt
 
 "use arrow keys to change buffers
 map <up> <C-W>k
