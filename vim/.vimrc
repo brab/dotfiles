@@ -170,6 +170,7 @@ Bundle 'gmarik/vundle'
 "github
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
 Bundle 'hdima/python-syntax'
