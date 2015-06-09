@@ -173,6 +173,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
+Bundle 'groenewege/vim-less'
 Bundle 'hdima/python-syntax'
 Bundle 'hynek/vim-python-pep8-indent'
 Bundle 'jelera/vim-javascript-syntax'
