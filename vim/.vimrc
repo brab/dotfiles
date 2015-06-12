@@ -19,14 +19,14 @@ set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
 set vb t_vb= "disable visual bell + terminal bell
 
 " File tabbing
-au BufRead,BufNewFile *.py,*.pyw,*.sh set expandtab
-au BufRead,BufNewFile *.py,*.pyw,*.sh set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw,*.sh set tabstop=4
-au BufRead,BufNewFile *.py,*.pyw,*.sh set softtabstop=4
-au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set shiftwidth=2
-au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set expandtab
-au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set tabstop=2
-au BufRead,BufNewFile *.html,*.php,*.js,*.css,*.rb,*.ejs set softtabstop=2
+au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set tabstop=4
+au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set softtabstop=4
+au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
+au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set expandtab
+au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set tabstop=2
+au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set softtabstop=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set shiftwidth=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set expandtab
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set tabstop=2
@@ -112,7 +112,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': ['javascript', 'python'],
 			   \ 'passive_filetypes': ['html'] }
-let g:syntastic_javascript_checkers=['jshint']
+let g:syntastic_javascript_checkers=['jshint', 'jscs']
 let g:syntastic_python_checkers=['pylint']
 "let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
 
