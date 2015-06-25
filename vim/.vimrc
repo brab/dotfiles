@@ -113,8 +113,14 @@ let g:syntastic_aggregate_errors = 1
 let g:syntastic_mode_map = { 'mode': 'active',
 			   \ 'active_filetypes': ['javascript', 'python'],
 			   \ 'passive_filetypes': ['html'] }
+" jshint: install with npm
+" jscs: install with npm
 let g:syntastic_javascript_checkers=['jshint', 'jscs']
+" pylint: install with pip
 let g:syntastic_python_checkers=['pylint']
+" bashate: install with pip
+" sh: install as system package
+let g:syntastic_sh_checkers=['bashate', 'sh']
 "let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
 
 " Functions
