@@ -19,10 +19,14 @@ set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
 set vb t_vb= "disable visual bell + terminal bell
 
 " File tabbing
-au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set expandtab
-au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set tabstop=4
-au BufRead,BufNewFile *.py,*.pyw,*.sh,*.js set softtabstop=4
+autocmd FileType sh setlocal expandtab
+autocmd FileType sh setlocal shiftwidth=4
+autocmd FileType sh setlocal tabstop=4
+autocmd FileType sh setlocal softtabstop=4
+au BufRead,BufNewFile *.py,*.pyw,*.js set expandtab
+au BufRead,BufNewFile *.py,*.pyw,*.js set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw,*.js set tabstop=4
+au BufRead,BufNewFile *.py,*.pyw,*.js set softtabstop=4
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set expandtab
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set tabstop=2
