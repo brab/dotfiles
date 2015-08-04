@@ -1,4 +1,5 @@
 {
-    "preset": "crockford",
-    "requireMultipleVarDecl": true
+	"preset": "crockford",
+	"requireMultipleVarDecl: null,
+	"disallowMultipleVarDecl": true
 }
