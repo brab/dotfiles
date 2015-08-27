@@ -4,7 +4,7 @@
 	name = Ben Rabinovitch
 	email = github@ben.rabinovitch.ca
 [alias]
-	tree = log --graph --oneline --decorate
+	tree = log --graph --oneline --decorate --color
 	st = status
 	di = diff
 	dt = difftool
