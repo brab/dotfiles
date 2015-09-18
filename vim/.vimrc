@@ -123,8 +123,9 @@ let g:syntastic_javascript_checkers=['jshint', 'jscs']
 " pylint: install with pip
 let g:syntastic_python_checkers=['pylint']
 " bashate: install with pip
+" shellcheck: install with homebrew or apt-get
 " sh: install as system package
-let g:syntastic_sh_checkers=['bashate', 'sh']
+let g:syntastic_sh_checkers=['bashate', 'shellcheck', 'sh']
 "let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
 
 " Functions
