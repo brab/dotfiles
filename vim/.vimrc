@@ -182,6 +182,7 @@ Bundle 'gmarik/vundle'
 "github
 Bundle 'airblade/vim-gitgutter'
 Bundle 'altercation/vim-colors-solarized'
+Bundle 'jnurmine/Zenburn'
 Bundle 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Bundle 'ervandew/supertab'
 Bundle 'godlygeek/tabular'
@@ -207,10 +208,11 @@ syntax on "syntax highlighting
 " color scheme
 if has('gui_running')
 	set background=light
+	colorscheme solarized
 else
-	set background=dark
+	set t_Co=256
+	colorscheme zenburn
 endif
-colorscheme solarized
 call togglebg#map("")
 
 " Code folding
