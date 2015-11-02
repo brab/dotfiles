@@ -212,7 +212,8 @@ if has('gui_running')
 	colorscheme solarized
 else
 	set t_Co=256
-	colorscheme zenburn
+	set background=dark
+	colorscheme solarized
 endif
 call togglebg#map("")
 
