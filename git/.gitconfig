@@ -12,8 +12,8 @@
 [push]
 	default = upstream
 [diff]
-	tool = mvimdiff
-[difftool "mvimdiff"]
-	cmd = mvim -f -R -d \"$LOCAL\" \"$REMOTE\"
+	tool = gvimdiff
+[difftool "gvimdiff"]
+	cmd = gvim -f -R -d \"$LOCAL\" \"$REMOTE\"
 [core]
 	excludesfile = ~/.gitignore
