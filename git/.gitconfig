@@ -7,7 +7,7 @@
 [alias]
 	tree = ! git log --graph --oneline --decorate --color | less -R
 	st = status
-	di = ! git diff | less -R
+	di = "!f() { git diff \"$@\" | less -R; }; f"
 	dt = difftool
 [push]
 	default = upstream
