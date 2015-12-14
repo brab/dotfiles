@@ -209,7 +209,7 @@ syntax on "syntax highlighting
 
 " color scheme
 if has('gui_running')
-	set background=light
+	set background=dark
 	colorscheme solarized
 else
 	set t_Co=256
