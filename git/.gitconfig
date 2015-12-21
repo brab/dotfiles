@@ -16,4 +16,4 @@
 [difftool "gvimdiff"]
 	cmd = gvim -f -R -d \"$LOCAL\" \"$REMOTE\"
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore-global
