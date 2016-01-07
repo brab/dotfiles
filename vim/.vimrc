@@ -199,6 +199,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/matchit.zip'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "vim-scripts
 Plugin 'L9'
