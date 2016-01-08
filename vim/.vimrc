@@ -182,6 +182,7 @@ Plugin 'gmarik/vundle'
 "github
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'ap/vim-css-color'
 Plugin 'jnurmine/Zenburn'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
 Plugin 'ervandew/supertab'
