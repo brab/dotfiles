@@ -106,6 +106,7 @@ channels = (
   { name = "silc"; chatnet = "silc"; autojoin = "No"; },
   { name = "#vandev"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#vanops"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#vandevops"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 aliases = {
@@ -278,5 +279,5 @@ settings = {
   "fe-text" = { actlist_sort = "refnum"; };
 };
 ignores = (
-  { level = "JOINS PARTS QUITS MODES NICKS"; channels = ( "#vandev", "#vanops" ); }
+  { level = "JOINS PARTS QUITS MODES NICKS"; channels = ( "#vandev", "#vanops", "#vandevops" ); }
 );
