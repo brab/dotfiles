@@ -1,6 +1,5 @@
 # bash aliases
 alias bgrep='grep -HIrin --color=always'
-alias ls='ls -hal'
 alias tmux='TERM=xterm-256color tmux'
 
 # use VI-style keybindings on the command line
