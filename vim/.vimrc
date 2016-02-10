@@ -19,10 +19,10 @@ set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
 set vb t_vb= "disable visual bell + terminal bell
 
 " File tabbing
-autocmd FileType sh setlocal expandtab
-autocmd FileType sh setlocal shiftwidth=4
-autocmd FileType sh setlocal tabstop=4
-autocmd FileType sh setlocal softtabstop=4
+autocmd FileType json,sh setlocal expandtab
+autocmd FileType json,sh setlocal shiftwidth=4
+autocmd FileType json,sh setlocal tabstop=4
+autocmd FileType json,sh setlocal softtabstop=4
 au BufRead,BufNewFile *.py,*.pyw,*.js set expandtab
 au BufRead,BufNewFile *.py,*.pyw,*.js set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw,*.js set tabstop=4
@@ -36,7 +36,12 @@ au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set expandtab
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set tabstop=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set softtabstop=2
 
-au BufRead,BufNewFile *.php,*.ejs set filetype=html "treat php + ejs as html
+" FileType maps
+" php + ejs as html
+au BufRead,BufNewFile *.php,*.ejs set filetype=html
+" har as json
+au BufRead,BufNewFile *.har set filetype=json
+
 au FileType text setlocal textwidth=78 "text file line length of 78 chars
 
 " Key mappings
@@ -120,6 +125,8 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " jshint: install with npm
 " jscs: install with npm
 let g:syntastic_javascript_checkers=['jshint', 'jscs']
+" jsonlint: install with npm
+let g:syntastic_json_checkers=['jsonlint']
 " pylint: install with pip
 let g:syntastic_python_checkers=['pylint']
 " bashate: install with pip
