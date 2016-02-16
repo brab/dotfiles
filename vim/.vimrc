@@ -16,6 +16,7 @@ set showcmd "show commands as they're typed
 set showmatch "highlight matching braces
 set spelllang=en_ca "set spelling language to Canadian English
 set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
+set titlestring=Vim\ %{ObsessionStatus()}
 set vb t_vb= "disable visual bell + terminal bell
 
 " File tabbing
@@ -204,6 +205,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-scripts/matchit.zip'
