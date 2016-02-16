@@ -15,9 +15,12 @@ set ruler "show line + column number and % progress through file in status line
 set showcmd "show commands as they're typed
 set showmatch "highlight matching braces
 set spelllang=en_ca "set spelling language to Canadian English
-set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%) "status line format
-set titlestring=Vim\ %{ObsessionStatus()}
 set vb t_vb= "disable visual bell + terminal bell
+
+" Status strings
+set statusline=%F\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%)
+set laststatus=2 "always show the status line
+set titlestring=%{ObsessionStatus()}\ %{getcwd()}
 
 " File tabbing
 autocmd FileType json,sh setlocal expandtab
