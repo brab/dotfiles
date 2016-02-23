@@ -6,6 +6,7 @@
 	email = github@ben.rabinovitch.ca
 [alias]
 	tree = ! git log --graph --oneline --no-decorate --color | less -R
+	tr = ! git log --color --graph --pretty=format:\"[%C(cyan)%<(10,trunc)%an, %ar%C(reset)] %<(50,trunc)%s\" | less -R
 	st = status --short
 	di = "!f() { git diff \"$@\" | less -R; }; f"
 	dt = difftool
