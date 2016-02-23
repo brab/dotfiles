@@ -50,11 +50,10 @@ au FileType text setlocal textwidth=78 "text file line length of 78 chars
 
 " Key mappings
 let mapleader=" "
-map <F2> :NERDTreeToggle <CR>
 map <F3> :nohl <CR>
 map <F4> :set spell!<CR>
 map <C-g> :FufFileWithCurrentBufferDir <CR>
-nmap <leader>t :tabnew<CR>:NERDTreeToggle<CR>
+nmap <leader>t :tabnew<CR>
 nmap [e :lprevious<CR>
 nmap ]e :lnext<CR>
 
@@ -99,9 +98,6 @@ nmap <leader>P P<leader>a
 vnoremap <silent> <leader>s :call VisualSelection('f')<CR>n
 vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
 
-"auto open NERDTree if no file specified
-autocmd vimenter * if !argc() | NERDTree | endif
-
 "return to last edit position when opening a file
 au BufReadPost *
     \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -114,9 +110,6 @@ hi Col79	guibg=#61380b
 hi Col80	guibg=#610b0b
 au BufWinEnter *.py let w:m1=matchadd('Col79', '\%<81v.\%>80v', -1)
 au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
-
-"NERDTree options
-let NERDTreeIgnore = ['\.pyc$']
 
 "Syntastic options
 let g:syntastic_always_populate_loc_list = 1
@@ -205,14 +198,13 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-vinegar'
 Plugin 'vim-scripts/matchit.zip'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 "vim-scripts
 Plugin 'L9'
