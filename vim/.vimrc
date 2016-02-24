@@ -213,6 +213,9 @@ Plugin 'FuzzyFinder'
 filetype plugin indent on "turn on filetype options: detection, plugin, indent
 syntax on "syntax highlighting
 
+" vim-vinegar config
+let &wildignore = '*.swo,*.swp,*.pyc'
+
 " color scheme
 if has('gui_running')
 	set background=dark
