@@ -111,6 +111,9 @@ hi Col80	guibg=#610b0b
 au BufWinEnter *.py let w:m1=matchadd('Col79', '\%<81v.\%>80v', -1)
 au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
 
+"Vinegar config
+let &wildignore = '*.swo,*.swp,*.pyc'
+
 "Syntastic options
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height=5
@@ -212,9 +215,6 @@ Plugin 'FuzzyFinder'
 
 filetype plugin indent on "turn on filetype options: detection, plugin, indent
 syntax on "syntax highlighting
-
-" vim-vinegar config
-let &wildignore = '*.swo,*.swp,*.pyc'
 
 " color scheme
 if has('gui_running')
