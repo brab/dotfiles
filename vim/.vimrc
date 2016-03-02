@@ -111,10 +111,10 @@ hi Col80	guibg=#610b0b
 au BufWinEnter *.py let w:m1=matchadd('Col79', '\%<81v.\%>80v', -1)
 au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
 
-"Vinegar config
+" Vinegar
 let &wildignore = '*.swo,*.swp,*.pyc'
 
-"Syntastic options
+" Syntastic
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height=5
 let g:syntastic_auto_loc_list = 1
