@@ -1,3 +1,5 @@
+/* global slate:false */
+
 // configs
 slate.configAll({
   defaultToCurrentScreen: true,
@@ -49,13 +51,13 @@ var macbookChainLeft = slate.op('chain', {
   operations: [macbookLeftBg, macbookLeft]
 });
 var macbookChainRight = slate.op('chain', {
-  operations: [macbookRight, macbookRightSm]
+  operations: [macbookRightSm, macbookRight]
 });
 var ext24ChainLeft = slate.op('chain', {
   operations: [ext24LeftBg, ext24Left]
 });
 var ext24ChainRight = slate.op('chain', {
-  operations: [ext24Right, ext24RightSm]
+  operations: [ext24RightSm, ext24Right]
 });
 
 // layout hashes
@@ -115,27 +117,27 @@ slate.bindAll({
   '/:ctrl;alt;cmd': function(currentWindow) {
     var screen = slate.screen(),
         screenSize = screen.rect().width + 'x' + screen.rect().height;
-    if (screenSize == monMacbook) {
+    if (screenSize === monMacbook) {
       macbookFull.run();
-    } else if (screenSize == monExt24) {
+    } else if (screenSize === monExt24) {
       ext24Full.run();
     }
   },
   'left:ctrl;alt;cmd': function(currentWindow) {
     var screen = slate.screen(),
         screenSize = screen.rect().width + 'x' + screen.rect().height;
-    if (screenSize == monMacbook) {
+    if (screenSize === monMacbook) {
       macbookChainLeft.run();
-    } else if (screenSize == monExt24) {
+    } else if (screenSize === monExt24) {
       ext24ChainLeft.run();
     }
   },
   'right:ctrl;alt;cmd': function(currentWindow) {
     var screen = slate.screen(),
         screenSize = screen.rect().width + 'x' + screen.rect().height;
-    if (screenSize == monMacbook) {
+    if (screenSize === monMacbook) {
       macbookChainRight.run();
-    } else if (screenSize == monExt24) {
+    } else if (screenSize === monExt24) {
       ext24ChainRight.run();
     }
   }
