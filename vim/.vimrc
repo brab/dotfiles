@@ -18,9 +18,9 @@ set spelllang=en_ca "set spelling language to Canadian English
 set vb t_vb= "disable visual bell + terminal bell
 
 " Status strings
-set statusline=%f\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%)
 set laststatus=2 "always show the status line
-set titlestring=%{ObsessionStatus()}\ %{fugitive#statusline()}\ %{getcwd()}
+set statusline=%f\ %m%r%h%w\ [%l,%v]\ [%L]\ (%p%%)
+set titlestring=%{ObsessionStatus()}\ %{getcwd()}
 
 " File tabbing
 autocmd FileType json,sh setlocal expandtab
