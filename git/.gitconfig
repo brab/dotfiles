@@ -7,7 +7,7 @@
 [alias]
 	tree = ! git log --graph --oneline --no-decorate --color | less -R
 	tr = ! git log --color --graph --pretty=format:\"%C(cyan)%<(9,trunc)%an%C(reset)%C(yellow)%ar%C(reset) %<(50,trunc)%s\" | less -R --chop-long-lines
-	st = "!f() { printf 'On branch %s\n' $(git rev-parse --abbrev-ref HEAD); git status --short; }; f"
+	st = status --short --branch
 	di = "!f() { git diff \"$@\" | less -R; }; f"
 	dt = difftool
 [push]
