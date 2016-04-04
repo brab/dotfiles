@@ -18,3 +18,5 @@
 	cmd = gvim -f -R -d \"$LOCAL\" \"$REMOTE\"
 [core]
 	excludesfile = ~/.gitignore-global
+[rerere]
+	enabled = true
