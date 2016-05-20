@@ -31,10 +31,6 @@ au BufRead,BufNewFile *.py,*.pyw,*.js set expandtab
 au BufRead,BufNewFile *.py,*.pyw,*.js set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw,*.js set tabstop=4
 au BufRead,BufNewFile *.py,*.pyw,*.js set softtabstop=4
-au BufRead,BufNewFile *.js set shiftwidth=2
-au BufRead,BufNewFile *.js set expandtab
-au BufRead,BufNewFile *.js set tabstop=2
-au BufRead,BufNewFile *.js set softtabstop=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set expandtab
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set tabstop=2
