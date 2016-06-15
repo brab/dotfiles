@@ -13,6 +13,7 @@
 [push]
 	default = upstream
 [diff]
+	compactionHeuristic = true
 	tool = gvimdiff
 [difftool "gvimdiff"]
 	cmd = gvim -f -R -d \"$LOCAL\" \"$REMOTE\"
