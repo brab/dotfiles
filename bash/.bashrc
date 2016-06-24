@@ -5,6 +5,9 @@ alias tmux='TERM=xterm-256color tmux'
 # use VI-style keybindings on the command line
 set -o vi
 
+# set the default editor
+export EDITOR='vim'
+
 if [ -x /usr/local/bin/brew ]; then
     # homebrew prefers this order for PATH
     export PATH=/usr/local/bin:$PATH
