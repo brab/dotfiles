@@ -29,11 +29,11 @@ root: ~/code/canalyst
 
 windows:
   - main:
-      layout: main-horizontal
+      layout: even-vertical
       panes:
         - git:
           - git st
           - gvim &>/dev/null
         - vagrant:
           - vagrant up && vagrant ssh
-  - second:
+  - Null:
