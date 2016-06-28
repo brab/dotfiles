@@ -28,7 +28,7 @@ root: ~/code/canalyst
 # post: tmux -CC attach -t canalyst
 
 windows:
-  - main:
+  - Null:
       layout: even-vertical
       panes:
         - git:
