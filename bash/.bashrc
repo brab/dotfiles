@@ -19,6 +19,13 @@ if [ -x /usr/local/bin/brew ]; then
     fi
 fi
 
+# pyenv config
+if [ -x ~/.pyenv/bin/pyenv ]; then
+    export PATH=~/.pyenv/bin:$PATH
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+fi
+
 ### Below code based on /etc/skel/.bashrc
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
