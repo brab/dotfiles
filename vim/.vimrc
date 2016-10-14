@@ -128,7 +128,8 @@ let g:syntastic_javascript_checkers=['jshint', 'jscs']
 " jsonlint: install with npm
 let g:syntastic_json_checkers=['jsonlint']
 " pylint: install with pip
-let g:syntastic_python_checkers=['pylint']
+" mypy: install with pip
+let g:syntastic_python_checkers=['pylint', 'mypy']
 " bashate: install with pip
 " shellcheck: install with homebrew or apt-get
 " sh: install as system package
