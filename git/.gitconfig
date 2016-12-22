@@ -3,7 +3,7 @@
 	diff = always
 [user]
 	name = Ben Rabinovitch
-	email = github@ben.rabinovitch.ca
+	email = ben@rabinovitch.ca
 [alias]
 	tree = ! git log --graph --oneline --no-decorate --color | less -R
 	tr = ! git log --color --graph --pretty=format:\"%C(cyan)%<(9,trunc)%an%C(reset)%C(yellow)%ar%C(reset) %<(50,trunc)%s\" | less -R --chop-long-lines
