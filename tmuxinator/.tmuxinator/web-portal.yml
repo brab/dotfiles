@@ -1,7 +1,7 @@
 # ~/.tmuxinator/canalyst.yml
 
-name: canalyst
-root: ~/code/canalyst
+name: web-portal
+root: ~/code/web-portal
 
 # Optional tmux socket
 # socket_name: foo
