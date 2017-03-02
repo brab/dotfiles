@@ -105,12 +105,6 @@ au BufReadPost *
     \ endif
 set viminfo^=%
 
-" Python - hightlight line cols 79 and beyond
-hi Col79	guibg=#61380b
-hi Col80	guibg=#610b0b
-au BufWinEnter *.py let w:m1=matchadd('Col79', '\%<81v.\%>80v', -1)
-au BufWinEnter *.py let w:m2=matchadd('Col80', '\%>80v.\+', -1)
-
 " Vinegar
 let &wildignore = '*.swo,*.swp,*.pyc'
 
