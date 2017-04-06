@@ -123,7 +123,7 @@ let g:syntastic_javascript_checkers=['jshint', 'jscs']
 let g:syntastic_json_checkers=['jsonlint']
 " pylint: install with pip
 " mypy: install with pip
-let g:syntastic_python_checkers=['pylint', 'mypy']
+let g:syntastic_python_checkers=['pylint', 'mypy', 'pycodestyle']
 let g:syntastic_python_mypy_args="--fast-parser --python-version 3.6"
 " bashate: install with pip
 " shellcheck: install with homebrew or apt-get
