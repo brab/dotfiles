@@ -134,6 +134,11 @@ let g:syntastic_sh_checkers=['bashate', 'shellcheck', 'sh']
 " NERD Commenter
 let g:NERDDefaultAlign = 'left'
 
+" SimpylFold
+let g:SimpylFold_docstring_preview = 1
+let g:SimpylFold_fold_docstring = 0
+let b:SimpylFold_fold_docstring = 0
+
 " Functions
 function! <SID>StripTrailingWhitespaces()
     let l = line(".")
@@ -201,6 +206,7 @@ Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
 Plugin 'tpope/vim-ragtag'
