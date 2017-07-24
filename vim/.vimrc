@@ -27,22 +27,27 @@ autocmd FileType json,sh setlocal expandtab
 autocmd FileType json,sh setlocal shiftwidth=4
 autocmd FileType json,sh setlocal tabstop=4
 autocmd FileType json,sh setlocal softtabstop=4
-au BufRead,BufNewFile *.py,*.pyw,*.js set expandtab
-au BufRead,BufNewFile *.py,*.pyw,*.js set shiftwidth=4
-au BufRead,BufNewFile *.py,*.pyw,*.js set tabstop=4
-au BufRead,BufNewFile *.py,*.pyw,*.js set softtabstop=4
-au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
+au BufRead,BufNewFile *.py,*.pyw set expandtab
+au BufRead,BufNewFile *.py,*.pyw set shiftwidth=4
+au BufRead,BufNewFile *.py,*.pyw set tabstop=4
+au BufRead,BufNewFile *.py,*.pyw set softtabstop=4
+au BufRead,BufNewFile *.js,*.ts set expandtab
+au BufRead,BufNewFile *.js,*.ts set shiftwidth=2
+au BufRead,BufNewFile *.js,*.ts set tabstop=2
+au BufRead,BufNewFile *.js,*.ts set softtabstop=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set expandtab
+au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set tabstop=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set softtabstop=2
-au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set shiftwidth=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set expandtab
+au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set shiftwidth=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set tabstop=2
 au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set softtabstop=2
 
 " FileType maps
 " php + ejs as html
 au BufRead,BufNewFile *.php,*.ejs set filetype=html
+au BufRead,BufNewFile *.ts set filetype=javascript
 " har as json
 au BufRead,BufNewFile *.har set filetype=json
 
