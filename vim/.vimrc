@@ -47,7 +47,6 @@ au BufRead,BufNewFile *.haml,*.sass,*.scss,*.yml,*.yaml set softtabstop=2
 " FileType maps
 " php + ejs as html
 au BufRead,BufNewFile *.php,*.ejs set filetype=html
-au BufRead,BufNewFile *.ts set filetype=javascript
 " har as json
 au BufRead,BufNewFile *.har set filetype=json
 
@@ -135,6 +134,8 @@ let g:syntastic_python_mypy_args="--fast-parser --python-version 3.6"
 " sh: install as system package
 let g:syntastic_sh_checkers=['bashate', 'shellcheck', 'sh']
 "let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
+" tslint: install with npm (also install typescript)
+let g:syntastic_typescript_checkers=['tslint']
 
 " NERD Commenter
 let g:NERDDefaultAlign = 'left'
@@ -207,6 +208,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'hdima/python-syntax'
 Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'jelera/vim-javascript-syntax'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
