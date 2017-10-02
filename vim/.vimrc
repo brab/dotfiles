@@ -139,6 +139,7 @@ let g:syntastic_typescript_checkers=['tslint']
 
 " NERD Commenter
 let g:NERDDefaultAlign = 'left'
+let g:NERDSpaceDelims = 1
 
 " SimpylFold
 let g:SimpylFold_docstring_preview = 1
