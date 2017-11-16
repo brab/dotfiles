@@ -112,30 +112,26 @@ set viminfo^=%
 " Vinegar
 let &wildignore = '*.swo,*.swp,*.pyc'
 
-" Syntastic
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height=5
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_mode_map = { 'mode': 'active',
-			   \ 'active_filetypes': ['javascript', 'python'],
-			   \ 'passive_filetypes': ['html'] }
-" jshint: install with npm
-" jscs: install with npm
-let g:syntastic_javascript_checkers=['jshint', 'jscs']
-" jsonlint: install with npm
-let g:syntastic_json_checkers=['jsonlint']
-" pylint: install with pip
-" mypy: install with pip
-let g:syntastic_python_checkers=['pylint', 'mypy', 'pycodestyle']
-let g:syntastic_python_mypy_args="--fast-parser --python-version 3.6"
+" Static code checkers
+"" Bash (not all are supported by ALE)
 " bashate: install with pip
 " shellcheck: install with homebrew or apt-get
 " sh: install as system package
-let g:syntastic_sh_checkers=['bashate', 'shellcheck', 'sh']
-"let g:syntastic_python_pylint_args="--rcfile=$HOME/.pylintrc"
+"" JSON
+" jsonlint: install with npm
+"" JavaScript
+" jshint: install with npm
+" jscs: install with npm
+"" Python
+" pylint: install with pip
+" mypy: install with pip
+"" Typescript
 " tslint: install with npm (also install typescript)
-let g:syntastic_typescript_checkers=['tslint']
+
+" ALE
+let g:ale_list_window_size = 5
+let g:ale_open_list = 1
+let g:ale_python_mypy_options = "--fast-parser --python-version 3.6"
 
 " NERD Commenter
 let g:NERDDefaultAlign = 'left'
@@ -213,7 +209,6 @@ Plugin 'leafgarland/typescript-vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
@@ -222,6 +217,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
 Plugin 'vim-scripts/matchit.zip'
+Plugin 'w0rp/ale'
 
 "vim-scripts
 Plugin 'L9'
