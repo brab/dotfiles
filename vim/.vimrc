@@ -133,6 +133,12 @@ let g:ale_list_window_size = 5
 let g:ale_open_list = 1
 let g:ale_python_mypy_options = "--fast-parser --python-version 3.6"
 
+" Airline
+let g:airline_theme = 'solarized'
+let g:airline_solarized_bg = 'dark'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#ale#enabled = 1
+
 " NERD Commenter
 let g:NERDDefaultAlign = 'left'
 let g:NERDSpaceDelims = 1
@@ -216,6 +222,8 @@ Plugin 'tpope/vim-ragtag'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'w0rp/ale'
 

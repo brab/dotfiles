@@ -8,7 +8,8 @@ set anti "antialias fonts
 if has("gui_gtk2")
     "Ubuntu
     try
-        set guifont=SourceCodePro\ 11
+	"https://github.com/powerline/fonts/tree/master/SourceCodePro
+        set guifont=SourceCodeProforPowerline\ 11
     catch
         set guifont=UbuntuMono\ 11
     endtry
@@ -16,7 +17,7 @@ if has("gui_gtk2")
 elseif has("gui_macvim")
     "OSX
     try
-        set guifont=SourceCodePro:h12
+        set guifont=SourceCodeProforPowerline:h12
     catch
         set guifont=Menlo:h12
     endtry
