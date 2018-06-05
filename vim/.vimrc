@@ -89,7 +89,7 @@ map <right> <C-W>l
 map + <C-W>+
 map _ <C-W>-
 map = <C-W>>
-map - <C-W><
+" map - <C-W><
 
 "autoindent line
 nnoremap <leader>= ==
