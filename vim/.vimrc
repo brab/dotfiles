@@ -27,6 +27,7 @@ autocmd FileType json,sh setlocal expandtab
 autocmd FileType json,sh setlocal shiftwidth=4
 autocmd FileType json,sh setlocal tabstop=4
 autocmd FileType json,sh setlocal softtabstop=4
+autocmd FileType gitcommit set spell
 au BufRead,BufNewFile *.py,*.pyw set expandtab
 au BufRead,BufNewFile *.py,*.pyw set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw set tabstop=4
