@@ -33,7 +33,7 @@ windows:
       panes:
         - git:
           - git st
-          - gvim
+          - test -f Session.vim && gvim -S Session.vim || gvim .
         - vagrant:
           - vagrant up && vagrant ssh
   - Null:
