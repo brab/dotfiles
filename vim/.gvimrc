@@ -5,7 +5,7 @@ set t_vb= "disable visual bell
 
 " Font stuff
 set anti "antialias fonts
-if has("gui_gtk2")
+if has("gui_gtk2") || has("gui_gtk3")
     "Ubuntu
     try
 	"https://github.com/powerline/fonts/tree/master/SourceCodePro
