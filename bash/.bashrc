@@ -20,10 +20,10 @@ if [ -x /usr/local/bin/brew ]; then
 fi
 
 # pyenv config
-if [ -x ~/.pyenv/bin/pyenv ]; then
-    export PATH=~/.pyenv/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+if [ -x $PYENV_ROOT/bin/pyenv ]; then
+    export PATH=$PYENV_ROOT/bin:$PATH
     eval "$(pyenv init -)"
-    eval "$(pyenv virtualenv-init -)"
 fi
 
 ### Below code based on /etc/skel/.bashrc
