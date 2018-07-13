@@ -27,7 +27,6 @@ autocmd FileType json,sh setlocal expandtab
 autocmd FileType json,sh setlocal shiftwidth=4
 autocmd FileType json,sh setlocal tabstop=4
 autocmd FileType json,sh setlocal softtabstop=4
-autocmd FileType gitcommit set spell
 au BufRead,BufNewFile *.py,*.pyw set expandtab
 au BufRead,BufNewFile *.py,*.pyw set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw set tabstop=4
@@ -51,7 +50,9 @@ au BufRead,BufNewFile *.php,*.ejs set filetype=html
 " har as json
 au BufRead,BufNewFile *.har set filetype=json
 
-au FileType text setlocal textwidth=78 "text file line length of 78 chars
+" Some specific behaviours for certain FileTypes
+au FileType markdown,text setlocal textwidth=78 "text file line length of 78 chars
+autocmd FileType gitcommit,markdown set spell "turn on spellcheck
 
 " Key mappings
 let mapleader=" "
