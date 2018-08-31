@@ -54,6 +54,9 @@ au BufRead,BufNewFile *.har set filetype=json
 au FileType markdown,text setlocal textwidth=78 "text file line length of 78 chars
 autocmd FileType gitcommit,markdown set spell "turn on spellcheck
 
+" Markdown Preview
+let g:mkdp_auto_start = 1
+
 " Key mappings
 let mapleader=" "
 map <F3> :nohl <CR>
@@ -217,6 +220,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'groenewege/vim-less'
 Plugin 'hdima/python-syntax'
 Plugin 'hynek/vim-python-pep8-indent'
+Plugin 'iamcco/markdown-preview.vim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maralla/vim-toml-enhance' "depends on cespare/vim-toml
