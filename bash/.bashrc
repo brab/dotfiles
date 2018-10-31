@@ -2,9 +2,6 @@
 alias bgrep='grep -HIrin --color=always'
 alias tmux='TERM=xterm-256color tmux'
 
-# use VI-style keybindings on the command line
-set -o vi
-
 # set the default editor
 export EDITOR='vim'
 
