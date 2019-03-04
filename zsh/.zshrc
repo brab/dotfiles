@@ -73,8 +73,10 @@ prompt_context(){}
 plugins=(
   cp
   git
+  heroku
   sudo
   tmuxinator
+  vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
