@@ -113,3 +113,7 @@ source $ZSH/oh-my-zsh.sh
 # Syntax highlighting
 # apt install zsh-syntax-highlighting
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Aliases
+# apt install jq
+alias json='jq --color-output . | less -R'
