@@ -70,6 +70,10 @@ prompt_context(){}
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# zsh-syntax-highlighting installation
+# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh
 plugins=(
   cp
   git
@@ -77,7 +81,14 @@ plugins=(
   sudo
   tmuxinator
   vi-mode
+  zsh-syntax-highlighting # must be last
 )
+
+# Homebrew autocompletion
+# Homebrew is a package manager for MacOS
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -110,10 +121,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Syntax highlighting
-# apt install zsh-syntax-highlighting
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 # Aliases
 # apt install jq
 alias json='jq --color-output . | less -R'
+
+# Environment
+export PYTHON_POWERLINE_PACKAGE=$(python3 -c 'import powerline; print(powerline.__path__[0])')
