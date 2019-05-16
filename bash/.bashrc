@@ -17,9 +17,7 @@ if [ -x /usr/local/bin/brew ]; then
 fi
 
 # pyenv config
-export PYENV_ROOT="$HOME/.pyenv"
-if [ -x $PYENV_ROOT/bin/pyenv ]; then
-    export PATH=$PYENV_ROOT/bin:$PATH
+if command -v pyenv &>/dev/null; then
     eval "$(pyenv init -)"
 fi
 

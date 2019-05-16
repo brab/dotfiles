@@ -125,5 +125,10 @@ source $ZSH/oh-my-zsh.sh
 # apt install jq
 alias json='jq --color-output . | less -R'
 
+# pyenv config
+if command -v pyenv &>/dev/null; then
+    eval "$(pyenv init -)"
+fi
+
 # Environment
 export PYTHON_POWERLINE_PACKAGE=$(python3 -c 'import powerline; print(powerline.__path__[0])')
