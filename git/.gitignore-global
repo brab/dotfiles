@@ -2,5 +2,6 @@
 *.swo
 *.swp
 *.netrwhist
+.DS_Store
 .python-version
 Session.vim
