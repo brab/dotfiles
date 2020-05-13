@@ -132,3 +132,4 @@ fi
 
 # Environment
 export PYTHON_POWERLINE_PACKAGE=$(python3 -c 'import powerline; print(powerline.__path__[0])')
+export PATH="/usr/local/sbin:$PATH"
