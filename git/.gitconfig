@@ -21,3 +21,5 @@
 	excludesfile = ~/.gitignore-global
 [rerere]
 	enabled = true
+[pull]
+	rebase = true
