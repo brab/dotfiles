@@ -34,6 +34,7 @@ windows:
         - git:
           - git st
           - test -f Session.vim && gvim -S Session.vim || gvim .
-        - vagrant:
-          - vagrant up && vagrant ssh
+        - docker:
+          - (( $(ps -xo comm | grep docker | wc -l) == 0 )) && open -b com.docker.docker && sleep 30
+          - docker compose up -d
   - Null:
