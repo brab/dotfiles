@@ -227,6 +227,7 @@ Plugin 'maralla/vim-toml-enhance' "depends on cespare/vim-toml
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'taku-o/vim-reorder-columns'
 Plugin 'tmhedberg/SimpylFold'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-obsession'
