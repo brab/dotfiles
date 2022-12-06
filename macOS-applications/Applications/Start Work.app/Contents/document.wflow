@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>512</string>
+	<string>520</string>
 	<key>AMApplicationVersion</key>
 	<string>2.10</string>
 	<key>AMDocumentVersion</key>
@@ -396,8 +396,6 @@
 						<string>0</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
@@ -408,29 +406,137 @@
 			<key>isViewVisible</key>
 			<integer>1</integer>
 		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.1.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>appPath</key>
+					<dict>
+						<key>isPathPopUp</key>
+						<true/>
+						<key>variableUUIDsInMenu</key>
+						<array/>
+					</dict>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array/>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Launch Application.action</string>
+				<key>ActionName</key>
+				<string>Launch Application</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>appPath</key>
+					<string>/Applications/Amphetamine.app</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.OpenApplication</string>
+				<key>CFBundleVersion</key>
+				<string>1.1.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMLaunchApplicationAction</string>
+				<key>InputUUID</key>
+				<string>BD5B16DB-BCBD-4362-8FA2-B03B97A2EC54</string>
+				<key>Keywords</key>
+				<array>
+					<string>File</string>
+					<string>Open</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>586AB835-224C-4F8E-8CE4-AFE60C63AE34</string>
+				<key>UUID</key>
+				<string>636CEF60-3F83-4F92-885C-55C0859642F8</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Finder</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>/System/Applications/Contacts.app</string>
+						<key>name</key>
+						<string>appPath</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<integer>1</integer>
+				<key>location</key>
+				<string>309.000000:570.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Launch Application.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>3228BFC5-1FDE-46ED-926F-17497E15834D</key>
+		<key>03DD2971-44C8-402F-908E-88459562ABA8</key>
 		<dict>
 			<key>from</key>
-			<string>1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E - 1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E</string>
+			<string>9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C - 9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C</string>
 			<key>to</key>
-			<string>71238EEC-4033-4562-817D-0C8CCCA42BD6 - 71238EEC-4033-4562-817D-0C8CCCA42BD6</string>
+			<string>636CEF60-3F83-4F92-885C-55C0859642F8 - 636CEF60-3F83-4F92-885C-55C0859642F8</string>
 		</dict>
-		<key>89C825B6-C1EE-4C96-8625-68276619449B</key>
+		<key>09FF8975-A3EC-4203-B65D-58253EC64D75</key>
+		<dict>
+			<key>from</key>
+			<string>71238EEC-4033-4562-817D-0C8CCCA42BD6 - 71238EEC-4033-4562-817D-0C8CCCA42BD6</string>
+			<key>to</key>
+			<string>9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C - 9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C</string>
+		</dict>
+		<key>8F0A54D9-5374-48B8-96ED-70C0E8EF773E</key>
 		<dict>
 			<key>from</key>
 			<string>51D99001-B253-4530-B3AE-2407F91FD3B1 - 51D99001-B253-4530-B3AE-2407F91FD3B1</string>
 			<key>to</key>
 			<string>1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E - 1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E</string>
 		</dict>
-		<key>A01006BB-7C57-4E6E-83BE-F754692A6074</key>
+		<key>FC879291-EF62-44B1-8F0C-6E81C9E06FC3</key>
 		<dict>
 			<key>from</key>
-			<string>71238EEC-4033-4562-817D-0C8CCCA42BD6 - 71238EEC-4033-4562-817D-0C8CCCA42BD6</string>
+			<string>1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E - 1035F9A4-83D1-46DD-A2B9-5ECA76DD7F8E</string>
 			<key>to</key>
-			<string>9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C - 9B52662E-5A9B-4ADB-93C8-CBDF8AED6E2C</string>
+			<string>71238EEC-4033-4562-817D-0C8CCCA42BD6 - 71238EEC-4033-4562-817D-0C8CCCA42BD6</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
