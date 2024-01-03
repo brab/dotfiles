@@ -130,7 +130,10 @@ if command -v pyenv &>/dev/null; then
     eval "$(pyenv init -)"
 fi
 
-# Environment
+# Powerline
+# pip3 install powerline-status
 export PYTHON_POWERLINE_PACKAGE=$(python3 -c 'import powerline; print(powerline.__path__[0])')
+
+# Environment
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/libpq/bin:$PATH"
