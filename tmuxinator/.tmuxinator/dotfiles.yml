@@ -34,4 +34,4 @@ windows:
         - git:
           - git st
         - vim:
-          - vim .
+          - test -f Session.vim && vim -S Session.vim || vim .
