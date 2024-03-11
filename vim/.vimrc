@@ -56,6 +56,8 @@ autocmd FileType gitcommit,markdown set spell "turn on spellcheck
 
 " Markdown Preview
 let g:mkdp_auto_start = 1
+let g:mkdp_auto_close = 0
+let g:mkdp_combine_preview = 1
 
 " Key mappings
 let mapleader=" "
@@ -220,7 +222,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'groenewege/vim-less'
 Plugin 'hdima/python-syntax'
 Plugin 'hynek/vim-python-pep8-indent'
-Plugin 'iamcco/markdown-preview.vim'
+Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maralla/vim-toml-enhance' "depends on cespare/vim-toml
