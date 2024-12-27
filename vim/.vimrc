@@ -31,10 +31,10 @@ au BufRead,BufNewFile *.py,*.pyw set expandtab
 au BufRead,BufNewFile *.py,*.pyw set shiftwidth=4
 au BufRead,BufNewFile *.py,*.pyw set tabstop=4
 au BufRead,BufNewFile *.py,*.pyw set softtabstop=4
-au BufRead,BufNewFile *.js,*.ts set expandtab
-au BufRead,BufNewFile *.js,*.ts set shiftwidth=2
-au BufRead,BufNewFile *.js,*.ts set tabstop=2
-au BufRead,BufNewFile *.js,*.ts set softtabstop=2
+au BufRead,BufNewFile *.js,*.ts,*.tsx set expandtab
+au BufRead,BufNewFile *.js,*.ts,*.tsx set shiftwidth=2
+au BufRead,BufNewFile *.js,*.ts,*.tsx set tabstop=2
+au BufRead,BufNewFile *.js,*.ts,*.tsx set softtabstop=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set expandtab
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set shiftwidth=2
 au BufRead,BufNewFile *.html,*.php,*.css,*.rb,*.ejs set tabstop=2
@@ -213,7 +213,7 @@ Plugin 'gmarik/vundle'
 "github
 Plugin 'airblade/vim-gitgutter'
 Plugin 'altercation/vim-colors-solarized'
-Plugin 'ap/vim-css-color'
+Plugin 'hail2u/vim-css3-syntax'
 Plugin 'jnurmine/Zenburn'
 Plugin 'cespare/vim-toml'
 Plugin 'docker/docker' , {'rtp': '/contrib/syntax/vim/'}
@@ -225,6 +225,9 @@ Plugin 'hynek/vim-python-pep8-indent'
 Plugin 'iamcco/markdown-preview.nvim'
 Plugin 'jelera/vim-javascript-syntax'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'peitalin/vim-jsx-typescript'
+"css highlighting inside JS/TS strings/objects
+Plugin 'styled-components/vim-styled-components'
 Plugin 'maralla/vim-toml-enhance' "depends on cespare/vim-toml
 Plugin 'othree/javascript-libraries-syntax.vim'
 Plugin 'rodjek/vim-puppet'
