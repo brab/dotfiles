@@ -7,7 +7,7 @@
 	<key>AMStayOpen</key>
 	<false/>
 	<key>BuildMachineOSBuild</key>
-	<string>22A380021</string>
+	<string>23A344014</string>
 	<key>CFBundleAllowMixedLocalizations</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -33,6 +33,8 @@
 	<string>Automator Application Stub</string>
 	<key>CFBundleIconFile</key>
 	<string>ApplicationStub</string>
+	<key>CFBundleIconName</key>
+	<string>ApplicationStub</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.apple.automator.Start-Work</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -52,7 +54,7 @@
 	<key>CFBundleURLTypes</key>
 	<array/>
 	<key>CFBundleVersion</key>
-	<string>526</string>
+	<string>531</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -60,15 +62,15 @@
 	<key>DTPlatformName</key>
 	<string>macosx</string>
 	<key>DTPlatformVersion</key>
-	<string>15.1</string>
+	<string>26.0</string>
 	<key>DTSDKBuild</key>
-	<string>24B65</string>
+	<string>25A333</string>
 	<key>DTSDKName</key>
-	<string>macosx15.1.internal</string>
+	<string>macosx26.0.internal</string>
 	<key>DTXcode</key>
-	<string>1600</string>
+	<string>2600</string>
 	<key>DTXcodeBuild</key>
-	<string>16A6170g</string>
+	<string>17A6264k</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.9</string>
 	<key>LSUIElement</key>
