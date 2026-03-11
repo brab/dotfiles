@@ -1,0 +1,7 @@
+Host akbash.den
+  Hostname 10.1.0.49
+  User benrab
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/id_ed25519
